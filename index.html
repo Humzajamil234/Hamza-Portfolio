@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1>Hamza Jamil</h1>
+        <p>Web Developer | Building Beautiful, Responsive Websites</p>
+        <a href="#contact" class="cta-btn">Contact Me</a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <section id="profile" class="profile">
+        <div class="profile-image">
+            <img src="./image/348559310_3666986193574372_1809704999954352770_n.jpg" alt="">
+        </div>
+        <div class="profile-info">
+            <p><strong>Email:</strong>hamzashahidjamil@gmail.com</p>
+            <p><strong>Phone:</strong>03172342070</p>
+            <p><strong>Date of Birth:</strong> 12 March 1999</p>
+            <p><strong>Nationality:</strong> Pakistani</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="skill-bar html"></div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="skill-bar css"></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="skill-bar js"></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Hello! I'm <strong>Hamza Jamil</strong>, a passionate web developer with a love for creating innovative and user-friendly web applications. My journey in web development began with a fascination for coding and design. Over the years, this fascination turned into a career, and now I’m on a mission to build websites and applications that not only look beautiful but also provide seamless experiences.</p>
+            
+            <p>My expertise lies in <strong>front-end technologies</strong> like <strong>HTML, CSS, JavaScript,</strong> and <strong>React.js</strong>. I am also proficient in working with back-end technologies such as <strong>Node.js</strong> and <strong>MongoDB</strong>. Whether it’s crafting pixel-perfect designs or solving complex development challenges, I love pushing the boundaries of what can be achieved on the web.</p>
+    
+            <p>I'm always seeking to learn new skills, stay updated with the latest web trends, and contribute to projects that make a difference. My focus is on writing clean, efficient, and well-documented code that not only performs well but also ensures a delightful user experience.</p>
+    
+            <p>When I'm not coding, you’ll find me exploring new technologies, reading books on design and technology, or capturing the world through photography. I believe in the power of collaboration and look forward to working with like-minded professionals to bring creative ideas to life.</p>
+    
+            <p>Let’s create something amazing together!</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <h2 style="color: indigo;">My Projects</h2>
+    <section id="projects" class="projects">
+        <div class="project-card">
+            <img src="./image/hiring snap.png" alt="Project 1 Screenshot" class="project-image">
+            <div class="project-info">
+                <h3>Hiring Mine</h3>
+                <a href="https://github.com/Humzajamil234/hiringmine-website" class="project-link" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <img src="./image/upwork snap.png" alt="Project 2 Screenshot" class="project-image">
+            <div class="project-info">
+                <h3>Upwork</h3>
+                <a href="https://github.com/Humzajamil234/Upwork-Website" class="project-link" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./image/olx snap.png" alt="Project 3 Screenshot" class="project-image">
+          <div class="project-info">
+              <h3>Olx</h3>
+              <a href="https://github.com/Humzajamil234/Olx-website" class="project-link" target="_blank">View on GitHub</a>
+          </div>
+      </div>
+
+      <div class="project-card">
+        <img src="./image/jaaz snap.png" alt="Project 4 Screenshot" class="project-image">
+        <div class="project-info">
+            <h3>Jazz cash</h3>
+            <a href="https://github.com/Humzajamil234/Jazz-Cash-Website" class="project-link" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+    
+        <!-- Add more projects in the same structure -->
+    </section>
+    
+    <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form action="#">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="#">GitHub</a>
+    </div>
+  </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <div>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </footer>
+
+    </body>
+  <script src="app.js"></script>
+</html>
