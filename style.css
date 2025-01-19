@@ -1036,3 +1036,75 @@ media only screen and (max-width: 768px) {
     height: 10px; /* Further reduce height for small screens */
   }
 }
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 5px;
+}
+
+.header-content {
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+  flex-basis: 100%;
+}
+
+.header-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2em;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #ff9800;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hamburger {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s ease;
+}
