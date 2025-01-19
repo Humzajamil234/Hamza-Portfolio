@@ -926,3 +926,113 @@ body {
     padding: 15px;
   }
 }
+
+media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Hide navigation by default */
+    width: 100%;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+
+  .header-content {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  /* When the menu is toggled, show the navigation */
+  .nav-active {
+    display: flex !important;
+  }
+
+  .header-content h1 {
+    font-size: 2.5em;
+  }
+
+  .header-content p {
+    font-size: 1em;
+  }
+
+  .cta-btn {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
+
+/* Skills Section */
+.skills {
+  background-color: #f4f4f4;
+  padding: 50px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.skill {
+  width: 30%;
+  text-align: center;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.html {
+  background-color: #e34c26;
+}
+
+.css {
+  background-color: #1572b6;
+}
+
+.js {
+  background-color: #f7df1e;
+}
+
+/* Media Queries for Skills (Mobile) */
+@media only screen and (max-width: 768px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    width: 70%; /* Reduce width for better layout */
+    margin-bottom: 20px; /* Add space between skills */
+  }
+
+  .skill-bar {
+    height: 12px; /* Reduce height of the skill bars */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skills-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    width: 90%; /* Make skill section wider on small mobile screens */
+    margin-bottom: 20px;
+  }
+
+  .skill-bar {
+    height: 10px; /* Further reduce height for small screens */
+  }
+}
